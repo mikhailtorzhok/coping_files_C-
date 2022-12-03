@@ -1,12 +1,18 @@
-include <stdio.h>
+#include <stdio.h>
+#include <iostream>
 #include <errno.h>
 #define BUF_SIZE 256
 
+using namespace std;
+
 int main(int argc, char *argv[]) {
 
-     FILE *in_file, *out_file;
+     cout << "dd if= of= ";
+     cout << endl;
 
-    char rec [BUF_SIZE];
+    // FILE *in_file, *out_file;
+
+/*    char rec [BUF_SIZE];
 
      size_t bytes_in, bytes_out;
 
@@ -29,7 +35,7 @@ int main(int argc, char *argv[]) {
     return 3;
     }
 
-    /* Обработать входной файл по одной записи за один раз. */
+    
     while ((bytes_in = fread(rec, 1, BUF_SIZE, in_file)) > 0) {
         bytes_out = fwrite(rec, 1, bytes_in, out_file);
 
@@ -42,6 +48,7 @@ int main(int argc, char *argv[]) {
 
     fclose (in_file);
     fclose (out_file);
-    return 0;
+*/    
+    return 0;
 
 }
