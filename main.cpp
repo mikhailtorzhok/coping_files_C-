@@ -49,6 +49,7 @@ int main(int argc, char *argv[]) {
         //printf(ss);
 
         printf("%d\n", counter);
+        printf("%d\n", counter);
         //system(final_command);
 
 
