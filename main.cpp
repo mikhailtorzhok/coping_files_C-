@@ -18,6 +18,13 @@ int main(int argc, char *argv[]) {
     string temp_str = strs.str();
     char* char_type = (char*) temp_str.c_str();
     printf(char_type);
+    int i=0;
+    for(i=0;i<argc;i++)
+    {
+        printf("%s",argv[i]);
+        printf("\n");
+    }
+  
 
     if (argc != 3) {
         printf("Использование: срС файл1 файл2 ");
