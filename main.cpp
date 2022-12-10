@@ -29,6 +29,13 @@ int main(int argc, char *argv[]) {
     char* char_type_argv_1  = (char*) temp_str.c_str();
     printf(char_type_argv_1);
 
+    stringstream strs2;
+    strs2 << argv [2];
+    string temp_str2 = strs2.str();
+    char* char_type_argv_2  = (char*) temp_str2.c_str();
+    printf(char_type_argv_2);
+
+
     if (argv[1] == std::string("-D")) {
         printf("Копируем рабочий стол в корень D ");
 
@@ -72,6 +79,7 @@ int main(int argc, char *argv[]) {
 
     if (argc != 3) {
         printf("Использование: main.exe файл1 файл2 ");
+
         return 1;
     }
 
